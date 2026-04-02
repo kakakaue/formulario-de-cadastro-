@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Moderno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form action="Cadastro.php" method="POST">
+        <h2>Crie sua conta</h2>
+
+        <div class="input-group">
+            <input type="text" name="nome" required>
+            <label>Nome</label>
+        </div>
+
+        <div class="input-group">
+            <input type="email" name="email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="input-group">
+            <input type="password" name="senha" required>
+            <label>Senha</label>
+        </div>
+
+        <div class="input-group">
+            <input type="number" name="idade">
+            <label>Idade</label>
+        </div>
+
+        <div class="input-group">
+            <select name="sexo" required>
+                <option value="" disabled selected></option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+            <label>Sexo</label>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+
+</body>
+</html>
